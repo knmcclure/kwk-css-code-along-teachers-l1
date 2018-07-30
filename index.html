@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="css/preset/preset.css">
-  <!-- Put CSS Link here!-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>CSS Practice</title>
 </head>
 <body>
 	<div id="title-section">
-    <h1>The Ultimate CSS Walkthrough</h1>
+    <h1 class=myClass>The Ultimate CSS Walkthrough</h1>
     <h2>An Introduction to Cascading Style Sheets</h2>
   </div>
   <hr>
@@ -83,6 +83,7 @@
   <p>To write declarations for a class, first decide on a name. Writing '.', then the name will let CSS know these are class declarations</p>
   <p>To use this class, we just put it inside any HTML element we want, like so:</p>
   <pre>
+    <p> < h3 class="myClass">Example Header< /h3></p>
     <h3 class="myClass">Example Header</h3>
   </pre>
   Now, just this one 'h3' element will have a gray background and blue text! Not only that, <em>any</em> element that is given the class "myClass" will have a gray background and blue text.
@@ -106,6 +107,7 @@
   <br>
   <p>Using an id for styling works the same way, with only two main differences. Instead of '.' at the start of the class name in our CSS file, we use '#'. Also, when assigning to an HTML eleemnt, instead of typing 'class="myClass"', you would write:</p>
   <pre>
+    <p>< h1 id="myHeaderId">Header!< /h1></p>
     <h1 id="myHeaderId">Header!</h1>
   </pre>
 </body>
